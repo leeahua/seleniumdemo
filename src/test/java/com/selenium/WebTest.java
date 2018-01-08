@@ -18,19 +18,19 @@ public class WebTest {
 
     WebDriver webDriver;
 
-    @BeforeClass
+    /*@BeforeClass
     public void setUp(){
-        File file = new File("/Applications/Firefox.app/Contents/MacOS/firefox");
+        File file = new File("src/main/resources/firefox");
         FirefoxBinary binary = new FirefoxBinary(file);
         System.setProperty("webdriver.gecko.driver","/Users/liyaohua/devsoft/geckodriver/geckodriver");
         System.setProperty("webdriver.firefox.bin",file.getAbsolutePath());
         webDriver = new FirefoxDriver();
-        System.out.println(" BaiDuTest class start");
+        System.out.println(" WebTest class start");
 
     }
    @AfterClass
     public void end(){
-       System.out.println(" BaiDuTest class end");
+       System.out.println(" WebTest class end");
         webDriver.quit();
     }
     @Test
@@ -39,9 +39,9 @@ public class WebTest {
         System.out.println(properties.toString());
     }
 
-    /**
+    *//**
      * 测试www.hexindai.com
-     * */
+     * *//*
     @Test
     public void testHeXinDai(){
         String baseUrl = "http://www.hexindai.com";
@@ -67,7 +67,7 @@ public class WebTest {
         for(WebElement element : webElements){
             System.out.println("login:"+element.getAttribute("class")+element.isDisplayed());
         }
-    }
+    }*/
 
 
 
